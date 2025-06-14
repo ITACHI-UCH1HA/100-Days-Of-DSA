@@ -24,6 +24,10 @@ public class MajorityElement {
 			}
 		}
 		
-		return majority;
+		if(currMax>arr.length/2){
+		    return majority;
+		}else{
+		    return -1;
+		}
     }
 }
