@@ -11,11 +11,12 @@ public class Palindrome {
     }
 
     public static boolean isPalindrome(String s) {
-        int i= 0 , j = s.length()-1;
+
 
         s = s.toLowerCase();
-        s = 
-
+        s = s.replaceAll("[^a-zA-Z0-9]","");
+        int i= 0 , j = s.length()-1;
+        System.out.println(s);
         while(i<j){
             char ch1 = s.charAt(i);
             char ch2 = s.charAt(j);
