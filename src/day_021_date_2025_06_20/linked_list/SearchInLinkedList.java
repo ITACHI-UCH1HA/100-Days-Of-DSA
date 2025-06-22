@@ -8,16 +8,16 @@ public class SearchInLinkedList {
     public static void main(String[] args) {
         LinkedList<Integer> list = new LinkedList<>();
     }
-    static boolean searchKey(int n, Node head, int key) {
-        Node curr = head;
-
-        while(curr!=null){
-            if(curr.data==key){
-                return true;
-            }
-            curr = curr.next;
-        }
-
-        return false;
-    }
+//    static boolean searchKey(int n, Node head, int key) {
+//        Node curr = head;
+//
+//        while(curr!=null){
+//            if(curr.data==key){
+//                return true;
+//            }
+//            curr = curr.next;
+//        }
+//
+//        return false;
+//    }
 }
