@@ -35,13 +35,10 @@ public class CircularLinkedList {
         return head;
     }
     public void print(){
-        if(head==null){
+        Node dummy = head;
+        if(dummy==null){
             System.out.println("NULL");
         }else {
-            do{
-                System.out.print(head.data);
-                head=head.next;
-            }while(head.next!=head);
         }
     }
     public static void main(String[] args) {
