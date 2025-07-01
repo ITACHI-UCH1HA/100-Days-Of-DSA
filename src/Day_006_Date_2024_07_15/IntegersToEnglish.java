@@ -16,7 +16,7 @@ public class IntegersToEnglish {
         }
         return "";
     }
-    public static int helper(){
+    private static int helper(){
         return -1;
     }
 }

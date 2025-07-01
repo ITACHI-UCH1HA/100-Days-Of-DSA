@@ -9,13 +9,13 @@ public class SubsetGeneration {
         int[] nums = {1,2,3};
         System.out.println(subsets(nums));
     }
-    public static ArrayList<ArrayList<Integer>> subsets(int nums[]){
+    private static ArrayList<ArrayList<Integer>> subsets(int nums[]){
         ArrayList<ArrayList<Integer>> generatedSubsets = new ArrayList<>();
         generatedSubsets.add(new ArrayList<>());
        // System.out.println(generatedSubsets);
         return helper(nums, generatedSubsets,0);
     }
-    public static ArrayList<ArrayList<Integer>> helper(int[] nums,
+    private static ArrayList<ArrayList<Integer>> helper(int[] nums,
                          ArrayList<ArrayList<Integer>> generatedSubsets,
                          int index){
         if(index>= nums.length){
